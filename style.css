@@ -1,22 +1,37 @@
 /* ==== common style ==== */
-body{
+body {
     margin: 0 auto;
 }
-/* *{
+
+* {
     margin: 0;
     padding: 0;
-} */
-/* ==== header ===== */
-header{
-    width: 100%;
-height: 1300px;
-background: rgba(255, 144, 14, 0.1);
 }
+
+.btn-primary {
+    width: 180px;
+    height: 70px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+
+    background: #FF900E;
+    border-radius: 8px;
+    border: none;
+}
+
+/* ==== header ===== */
+header {
+    width: 100%;
+    height: 1160px;
+    background: rgba(255, 144, 14, 0.1);
+}
+
 /* ==== Nav styles ==== */
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 30px 210px;
+    padding: 30px 210px;
 }
 
 .nav-title {
@@ -36,4 +51,163 @@ nav a {
     font-weight: 500;
     font-size: 18px;
     color: #424242;
+}
+
+/* ===== header main ======= */
+.header-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ==== header-description ===== */
+.header-description {
+    width: 800px;
+    height: 225px;
+    text-align: center;
+    /* margin: 40px auto; */
+
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+}
+
+.header-description p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+/* ===== header banner ===== */
+.header-banner {
+    width: 1350px;
+    height: 700px;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header-banner img {
+    width: 100%;
+}
+
+/* ====== quick feature styles */
+.quick-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+}
+
+.feature-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    height: 700px;
+    width: 400px;
+}
+
+.feature-image {
+    height: 340px;
+    width: 340px;
+}
+
+.feature-heading {
+    height: 500px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-title {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.feature-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.quick {
+    color: #727272;
+}
+
+.feature {
+    color: #FF900E;
+}
+
+/* ===== enjoy and love ====== */
+.features-enjoy {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.features {
+    width: 600px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.features .feature-title {
+    width: 400px;
+    height: 200px;
+    padding-left: 20px;
+    border-left: 4px solid orange;
+}
+
+.love-details {
+    width: 586px;
+    height: 110px;
+    margin: 25px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.love-title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.girl img{
+    height: 900px;
+}
+
+
+/* ==== big button ==== */
+.big-button{
+    display: flex;
+    justify-content: center;
+}
+.btn-secondary {
+   position: relative;
+    top: -90px;
+    right: -40px;
+    width: 160px;
+    height: 100px;
+    background: #FF900E;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 18px;
+}
+
+.exp {
+    font-weight: 500;
+    font-size: 15px;
 }
