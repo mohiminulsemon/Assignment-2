@@ -121,9 +121,10 @@ nav a {
     align-content: center;
 }
 
-.feature-image img{
+.feature-image img {
     width: 100%;
 }
+
 .feature-heading {
     height: 40%;
     width: 360px;
@@ -131,6 +132,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
 }
+
 .quick {
     color: #727272;
 }
@@ -171,9 +173,11 @@ nav a {
     font-weight: 600;
     font-size: 20px;
 }
-.girl{
+
+.girl {
     width: 40%;
 }
+
 .girl img {
     width: 100%;
     height: 100%;
@@ -225,6 +229,7 @@ nav a {
     transform: rotate(90deg);
     transition: transform 1.5s;
 }
+
 .box {
     border: 1px solid orange;
     border-radius: 8px;
@@ -270,6 +275,43 @@ nav a {
     filter: grayscale(100%);
 }
 
+/* ===== extra ======== */
+.extra {
+    display: flex;
+    justify-content: center;
+}
+
+.thanks {
+    animation: wave 2s infinite forwards;
+}
+
+@keyframes wave {
+    0% {
+        color: aqua;
+        transform: scale(1);
+    }
+
+    25% {
+        color: rgb(49, 19, 105);
+        transform: scale(1.1);
+    }
+
+    50% {
+        color: rgb(14, 141, 82);
+        transform: scale(1.3);
+    }
+
+    75% {
+        color: rgb(171, 204, 53);
+        transform: scale(1.1);
+    }
+
+    100% {
+        color: rgb(173, 125, 36);
+        transform: scale(1);
+    }
+}
+
 /* ===== footer ===== */
 footer {
     height: 100px;
@@ -291,61 +333,71 @@ footer h3 {
 /* responsiveness for smaller devices with max 688px width */
 
 @media screen and (max-width:688px) {
-    header{
+    header {
         height: 790px;
     }
+
     nav {
         display: flex;
         justify-content: space-between;
         padding: 15px 50px;
     }
+
     .nav-link {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .header-title {
         font-weight: 700;
         font-size: 35px;
     }
-    
+
     .header-description p {
         font-weight: 400;
         font-size: 15px;
     }
- 
-    .quick-list{
+
+    .quick-list {
         flex-direction: column;
     }
-    .feature-images{
+
+    .feature-images {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .features-enjoy{
+    .features-enjoy {
         flex-direction: column;
         align-items: center;
     }
-    .features{
+
+    .features {
         width: 70%;
     }
+
     .girl {
         width: 60%;
     }
+
     .btn-secondary {
         position: relative;
         top: 0;
         right: 0;
     }
+
     .some-facts {
         width: 25%;
         margin: 10px auto;
     }
+
     .boxes {
         display: flex;
         flex-direction: column;
         margin: 40px 30% 40px;
         gap: 40px;
     }
+
     .sponsors {
         display: flex;
         flex-direction: column;
@@ -353,11 +405,17 @@ footer h3 {
         width: 80%;
         filter: grayscale(100%);
     }
-    .sponsors img{
+
+    .sponsors img {
         display: block;
         margin-bottom: 10px;
     }
-    footer{
+
+    .thanks h2 {
+        font-size: 30px;
+    }
+
+    footer {
         margin: 20px 75px;
     }
 }
