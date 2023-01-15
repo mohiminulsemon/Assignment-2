@@ -276,6 +276,7 @@ nav a {
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    filter: grayscale(100%);
 }
 
 /* ===== footer ===== */
@@ -294,4 +295,78 @@ footer h3 {
     font-size: 20px;
     font-weight: 400;
     color: #424242;
+}
+
+/* responsiveness for smaller devices with max 688px width */
+
+@media screen and (max-width:688px) {
+    header{
+        height: 790px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 50px;
+    }
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-title {
+        font-weight: 700;
+        font-size: 35px;
+    }
+    
+    .header-description p {
+        font-weight: 400;
+        font-size: 15px;
+    }
+    
+
+    .quick-list {
+        flex-direction: column;
+        margin: 80px 20px;
+    }
+    
+    .feature-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .features-enjoy {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+    .girl{
+        width: 40%;
+        height: 400px;
+    }
+    .btn-secondary {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .some-facts {
+        width: 25%;
+        margin: 10px auto;
+    }
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 30% 40px;
+        gap: 40px;
+    }
+    .sponsors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        filter: grayscale(100%);
+    }
+    .sponsors img{
+        display: block;
+        margin-bottom: 10px;
+    }
 }
