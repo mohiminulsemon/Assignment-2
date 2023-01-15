@@ -76,9 +76,8 @@ nav a {
 /* ==== header-description ===== */
 .header-description {
     width: 40%;
-    height: 225px;
     text-align: center;
-    /* margin: 40px auto; */
+    margin: 40px auto;
 
 }
 
